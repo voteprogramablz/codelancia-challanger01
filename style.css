@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-one: "Lexend Deca", sans-serif;
+  --font-two: "Inter", sans-serif;
+  --white: #ffffff;
+  --white-200: #f3f5f7;
+  --gray: #717171;
+  --gray-dark: #1a202c;
+  --purple: #574ae8;
+  --gradientEnd: #3ea1db;
+}
+
+body {
+  background-color: var(--white-200);
+}
+
+.headerBackground {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, var(--purple), var(--gradientEnd));
+  margin-bottom: 6.25rem;
+}
+
+.headerBackground .content {
+  padding-bottom: 3rem;
+}
+
+.content {
+  width: 62.5%;
+  margin: 0 auto;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.875rem;
+  margin-bottom: 4.9rem;
+}
+
+.headerTop .title {
+  font-family: var(--font-one);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.375rem;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding-left: 1.25rem;
+}
+
+#search {
+  background-color: transparent;
+  border: none;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+  width: 90%;
+  font-family: var(--font-one);
+  color: var(--white);
+}
+
+#search:focus {
+  outline: none;
+  border-style: none;
+  background-color: transparent;
+}
+
+#search::placeholder {
+  color: var(--white);
+  font-family: var(--font-two);
+  font-size: 1.125rem;
+}
+
+.like {
+  fill: none;
+  stroke: var(--purple);
+}
+
+.like.liked {
+  fill: var(--purple);
+  stroke: var(--purple);
+}
+
+.postsContainer {
+  padding: 1.687rem 1.562rem;
+  background: var(--white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  margin-bottom: 3.125rem;
+}
+
+.postsHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  font-family: var(--font-one);
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 1.375rem;
+}
+
+.postsContentContainer .title {
+  font-family: var(--font-one);
+  color: var(--gray-dark);
+  font-size: 1.625rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.postsContentContainer .postsContent {
+  font-family: var(--font-one);
+  color: var(--gray);
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 760px) {
+  .content {
+    width: 90%;
+  }
+}
